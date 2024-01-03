@@ -1,102 +1,46 @@
-﻿/*
-string? inputFromUser;
-int numberInInput;
-bool validNumber = false;
+﻿const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 
-Console.WriteLine("Enter an integer value between 5 and 10");
+const string openSpan = "<span>";
+const string closeSpan = "</span>";
 
-do
+const string replacedParameter = "trade";
+const string whatToReplace = "reg";
+
+const int unwantedCharCount = 2;
+
+string quantity = "";
+string output = "";
+string[] deletedParameters = new string[] { "<div>", "</div>" };
+
+// Your work here
+quantity = QuantityFinder();
+output = OutputFinder(deletedParameters, replacedParameter, whatToReplace);
+
+Console.Clear();
+Console.WriteLine(quantity);
+Console.WriteLine(output);
+
+static string QuantityFinder()
 {
-   inputFromUser = Console.ReadLine();
-   validNumber = int.TryParse(inputFromUser, out numberInInput);
-   
-   if(!validNumber)
-   {
-      Console.WriteLine("Sorry, you entered an invalid number, please try again");
-      continue;
-   }
+    string quantity;
 
-   else if(numberInInput < 5 || numberInInput > 10)
-   {
-      Console.WriteLine($"You entered {numberInInput}. Please enter a number between 5 and 10.");
-      validNumber = false;
-   }
-   
+    int quantityStart = input.IndexOf(openSpan) + openSpan.Length; // + length of <span> so index at end of <span> tag
+    int quantityEnd = input.IndexOf(closeSpan);
+    int quantityLength = quantityEnd - quantityStart;
 
-} while (inputFromUser == null || !validNumber);
+    quantity = input.Substring(quantityStart, quantityLength);
 
-Console.WriteLine($"Your input value {(numberInInput)} has been accepted.");
-*/
-/*
-using System.Reflection.Metadata;
-
-string? inputFromUser;
-string roleToMatch;
-bool isRoleValid = false;
-string[] roles = new string[3] { "Administrator", "Manager", "User" };
-
-Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
-
-do
-{
-   inputFromUser = Console.ReadLine();
-   roleToMatch = inputFromUser.Trim().ToLower();
-
-   switch (roleToMatch)
-   {
-      case "administrator":
-      case "manager":
-      case "user":
-         Console.WriteLine($"Your input value ({inputFromUser.Trim()}) has been accepted.");
-         isRoleValid = true;
-         break;
-
-      default:
-         Console.WriteLine($"The role name that you entered, '{inputFromUser.Trim()}' is not valid. Enter your role name (Administrator, Manager, or User)");
-         isRoleValid = false;
-         break;
-
-   }
-
-} while (inputFromUser == null || !isRoleValid);
-*/
-
-string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
-int stringsCount = myStrings.Length;
-
-string myString = "";
-int periodLocation = 0;
-
-for (int i = 0; i < stringsCount; i++)
-{
-   myString = myStrings[i];
-   periodLocation = myString.IndexOf(".");
-
-   string mySentence;
-
-   // extract sentences from each string and display them one at a time
-   while (periodLocation != -1)
-   {
-
-      // first sentence is the string value to the left of the period location
-      mySentence = myString.Remove(periodLocation);
-
-      // the remainder of myString is the string value to the right of the location
-      myString = myString.Substring(periodLocation + 1);
-
-      // remove any leading white-space from myString
-      myString = myString.TrimStart();
-
-      // update the comma location and increment the counter
-      periodLocation = myString.IndexOf(".");
-
-      Console.WriteLine(mySentence);
-   }
-
-   mySentence = myString.Trim();
-   Console.WriteLine(mySentence);
+    return $"Quantity: {quantity}";
 }
 
+static string OutputFinder(string[] deletedParameters, string replacedParameter, string whatToReplace)
+{
+    string outputString = input;
 
+    foreach (string parameter in deletedParameters)
+        outputString = outputString.Replace(parameter, "");
 
+    outputString = outputString.Replace(replacedParameter, whatToReplace);
 
+    return outputString;
+}
