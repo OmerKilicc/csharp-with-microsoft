@@ -1,0 +1,15 @@
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\bin\Debug\net6.0\Starter.exe
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\bin\Debug\net6.0\Starter.deps.json
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\bin\Debug\net6.0\Starter.runtimeconfig.json
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\bin\Debug\net6.0\Starter.dll
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\bin\Debug\net6.0\Starter.pdb
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.AssemblyInfoInputs.cache
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.AssemblyInfo.cs
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.csproj.CoreCompileInputs.cache
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.sourcelink.json
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.dll
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\refint\Starter.dll
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.pdb
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\Starter.genruntimeconfig.cache
+D:\Dev\Projects\CSharpProjects\Microsoft\4-Create Methods in C# Console Applications\ChallengeProject\MyFinal\obj\Debug\net6.0\ref\Starter.dll
